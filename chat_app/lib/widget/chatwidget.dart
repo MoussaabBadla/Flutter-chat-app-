@@ -59,7 +59,7 @@ class chatwidget extends StatelessWidget {
           
         ),
       ),
-      trailing: Text(CreatedAt!,style: TextStyle(color:Colors.grey,fontSize: 13 ),),
+      trailing: Text(CreatedAt!,style: TextStyle(color:Colors.grey,fontSize: 12 ),),
       
     );
   }

@@ -1,0 +1,41 @@
+ match /user/{uid} { 
+  allow write ;
+  }
+    match /user { 
+  allow write  ;
+  }
+     match /chat/{document=**} { 
+  allow write : if request.auth!=null && request.auth.uid==uid;
+  }
+
+          UserCredential authResult = await _auth.signInWithEmailAndPassword(
+          email: email,
+          password: password,
+        );
+          const Expanded(
+              child: const message(),
+            
+            ),
+            const newMassge()
+                                              QueryDocumentSnapshot<Object?>? lastindex(
+                                      int index) {
+                                    if (dos!.firstWhere((element) =>
+                                            element['userid'] == est!.uid &&
+                                                element['to'] ==
+                                                    docs?[index]['id'] ||
+                                            element['userid'] ==
+                                                    docs?[index]['id'] &&
+                                                element['to'] == est.uid) ==
+                                        null) {
+                                      return null;
+                                    } else {
+                                      return dos.firstWhere((element) =>
+                                          element['userid'] == est!.uid &&
+                                              element['to'] ==
+                                                  docs?[index]['id'] ||
+                                          element['userid'] ==
+                                                  docs?[index]['id'] &&
+                                              element['to'] == est.uid);
+                                    }
+                                  }
+
